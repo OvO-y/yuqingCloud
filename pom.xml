@@ -10,7 +10,8 @@
 	</parent>
 	<packaging>pom</packaging>
 	<modules>
-		<module>yuqingdemo</module>
+		<module>yuqingService</module>
+		<module>modal</module>
 	</modules>
 	<groupId>org.example</groupId>
 	<artifactId>yuqingCloud</artifactId>

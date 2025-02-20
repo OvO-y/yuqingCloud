@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/modal/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/yuqingdemo/monitorManage/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/yuqingdemo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/yuqingdemo/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/yuqingdemo/userInfo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/yuqingdemo/yuqing-DateManage/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/yuqingdemo/yuqing-dataManage/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/yuqingdemo/yuqing-hot/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/yuqingdemo/yuqing-userInfo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuqingService/monitorManage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuqingService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuqingService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuqingService/user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuqingService/yuqing-DateManage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuqingService/yuqing-dataManage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuqingService/yuqing-hot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuqingService/yuqing-userInfo/src/main/java" charset="UTF-8" />
   </component>
 </project>
