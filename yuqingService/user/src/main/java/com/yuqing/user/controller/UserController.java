@@ -24,17 +24,12 @@ public class UserController {
         return "user.timeout=" + userProperties.getTimeout()+ "; user.auto-confirm = " + userProperties.getAutoConfirm();
     }
 
-    @GetMapping("/user/{id}")
-    public User getUser(@PathVariable("id") int userId) {
-        //路径取出商品id
-        User user = userService.getUserById(userId);
-        return user;
-    }
-    @PostMapping("/user/getInfo")
-    public User getInfo(User user){
-        userService.getAllUser();
-        return user;
-    }
+//    @GetMapping("/user/{id}")
+//    public User getUser(@PathVariable("id") int userId) {
+//        //路径取出商品id
+//        User user = userService.getUserById(userId);
+//        return user;
+//    }
     @PostMapping("/user/changePassword")
     public Result changePassword(@RequestBody User user){
         String userChangePassword = userService.changePassword(user);
