@@ -8,7 +8,7 @@ import com.yuqing.user.service.UserService;
 
 import java.util.List;
 
-@Service
+@Service("UserServiceImpl")
 public class UserServiceImpl implements UserService {
     @Autowired
     UserDao userDao;

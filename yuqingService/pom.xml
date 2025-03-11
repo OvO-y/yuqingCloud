@@ -14,6 +14,7 @@
         <module>yuqing-dataManage</module>
         <module>user</module>
         <module>monitorManage</module>
+        <module>loginregister</module>
     </modules>
     <artifactId>yuqingService</artifactId>
 

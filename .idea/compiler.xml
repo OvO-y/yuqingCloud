@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="monitorManage" />
+        <module name="loginregister" />
         <module name="yuqing-hot" />
         <module name="yuqing-dataManage" />
         <module name="user" />
@@ -21,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="loginregister" options="-parameters" />
       <module name="modal" options="-parameters" />
       <module name="monitorManage" options="-parameters" />
       <module name="user" options="-parameters" />

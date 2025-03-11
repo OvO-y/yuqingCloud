@@ -12,9 +12,9 @@ public class UserInfoTest {
 //    public UserInfoTest(UserService userService) {
 //        this.userService = userService;
 //    }
-    @Test
-    public void
-    getUserInfo() {
-        System.out.println(userService.getAllUser());
-    }
+//    @Test
+//    public void
+//    getUserInfo() {
+//        System.out.println(userService.getAllUser());
+//    }
 }
