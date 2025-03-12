@@ -1,6 +1,7 @@
 package com.yvqing.loginregister.controller;
 
 
+import com.yuqing.common.UserOptLogger;
 import com.yuqing.user.bean.User;
 import com.yvqing.loginregister.dto.LoReDto;
 import com.yvqing.loginregister.dto.UserRegistrationDto;
@@ -28,7 +29,7 @@ public class LoReController {
         this.loginRegisterService = loginRegisterService;
     }
 
-
+    @UserOptLogger(operation = "用户使用账号登录")
     @PostMapping("/accountlogin")
     @Operation(summary = "账号登录", description = "这是账号登录的方法")
     public ResponseEntity<LoReDto> accountLogin (@RequestBody User user) {
@@ -38,7 +39,7 @@ public class LoReController {
         System.out.println("test getToken ："+reDto.getToken());
         return ResponseEntity.ok(reDto);
     }
-
+    @UserOptLogger(operation = "用户使用手机号登录")
     @PostMapping("/phonelogin")
     @Operation(summary = "手机短信登录", description = "这是手机短信登录的方法")
     public ResponseEntity<LoReDto> phoneLogin(@RequestBody User user) {
@@ -47,7 +48,7 @@ public class LoReController {
         System.out.println(reDto.getResp());
         return ResponseEntity.ok(reDto);
     }
-
+    @UserOptLogger(operation = "用户使用手机号注册")
     @PostMapping("/register")
     @Operation(summary = "手机号注册", description = "这是手机号注册的方法")
     public ResponseEntity<LoReDto> register(@RequestBody UserRegistrationDto user) {
