@@ -131,7 +131,12 @@ public class LoginRegisterImpl implements LoginRegisterService {
 
         System.out.println("test " + re);
 
-        if (re == 1) reDto.setResp("Register successfully");
+        if (re == 1) {
+            reDto.setResp("Register successfully");
+            reDto.setAccount(userDto.getUser().getAccount());
+            reDto.setTelephone(userDto.getUser().getTelephone());
+            reDto.setToken(JwtUtil.createToken());
+        };
 
         return reDto;
     }
