@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default: # 针对所有微服务
+            connect-timeout: 1000  # 连接超时时间1秒（单位：毫秒）
+            read-timeout: 2000     # 读取响应超时时间2秒
+            logger-level: full
+          service-things: # 针对名为service-things的微服务
+            #        点击config可以查看其他能够设置的配置项
+            connect-timeout: 3000  # 连接超时时间3秒（单位：毫秒）
+            read-timeout: 5000     # 读取响应超时时间5秒
+            logger-level: full     # 开启完整的请求日志记录
+
+#开启熔断功能
+feign:
+  sentinel:
+    enabled: true
