@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="opinion-monitoring@localhost" uuid="5df9844b-3ec8-474a-9c7f-8d85df79d975">
+    <data-source source="LOCAL" name="opinion-monitoring@localhost" uuid="e19ffdde-d043-4f8a-a7d2-0e49c0ec2d5a">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
-      <remarks>$PROJECT_DIR$/yuqingService/user/src/main/resources/application.properties</remarks>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3307/opinion-monitoring?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;serverTimezone=Asia/Shanghai&amp;useSSL=false</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="opinion-monitoring@localhost" uuid="7c4489b5-2b72-40b0-9045-9ddc6493c66e">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/yuqingService/yuqing-hot/src/main/resources/application.properties</remarks>
+      <remarks>$PROJECT_DIR$/yuqingService/yuqing-dataManage/src/main/resources/application.properties</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3307/opinion-monitoring?useUnicode=true&amp;characterEncoding=utf8</jdbc-url>
       <jdbc-additional-properties>
@@ -22,24 +13,6 @@
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
         <property name="com.intellij.clouds.kubernetes.db.container.port" />
       </jdbc-additional-properties>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="opinion-monitoring@localhost" uuid="26e2c640-2132-4b75-aa39-1af5dd1a8e8f">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/yuqingService/yuqing-dataManage/src/main/resources/application.properties</remarks>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3307/opinion-monitoring?useUnicode=true&amp;characterEncoding=utf8</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="opinion-monitoring@localhost" uuid="29ee1275-b0cb-4373-9cda-e51b7a21dbec">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/yuqingService/monitorManage/src/main/resources/application.properties</remarks>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3307/opinion-monitoring?useUnicode=true&amp;characterEncoding=utf8</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
