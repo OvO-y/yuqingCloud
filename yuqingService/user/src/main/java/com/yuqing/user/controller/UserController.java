@@ -1,5 +1,6 @@
 package com.yuqing.user.controller;
 
+import com.yuqing.common.UserOptLogger;
 import com.yuqing.user.bean.User;
 import com.yuqing.user.dto.Result;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,7 @@ public class UserController {
 //        User user = userService.getUserById(userId);
 //        return user;
 //    }
+@UserOptLogger(operation = "用户修改密码")
     @PostMapping("/user/changePassword")
     public Result changePassword(@RequestBody User user){
         String userChangePassword = userService.changePassword(user);
