@@ -115,7 +115,7 @@ public class LoginRegisterImpl implements LoginRegisterService {
     public LoReDto register(UserRegistrationDto userDto) {
         int re = 0;
         LoReDto reDto = new LoReDto();
-
+        User reUser = new User();
         if (registerSearch(userDto) != null) {
             reDto.setResp("User has been registered");
             return reDto;
@@ -123,8 +123,10 @@ public class LoginRegisterImpl implements LoginRegisterService {
             userDto.getUser().setCreate_time(LocalDateTime.now());
             if (userDto.getMethod().equals("phone")) {
                 re = loReDao.addUserByPhone(userDto.getUser());
+                reUser = loReDao.getUserByPhone(userDto.getUser().getTelephone()).get(0);
             } else if (userDto.getMethod().equals("email")) {
                 re = loReDao.addUserByEmail(userDto.getUser());
+                reUser = loReDao.getUserByEmail(userDto.getUser().getEmail()).get(0);
             }
         }
         userDto.getUser().setCreate_time(LocalDateTime.now());
@@ -133,9 +135,14 @@ public class LoginRegisterImpl implements LoginRegisterService {
 
         if (re == 1) {
             reDto.setResp("Register successfully");
-            reDto.setAccount(userDto.getUser().getAccount());
-            reDto.setTelephone(userDto.getUser().getTelephone());
-            reDto.setToken(JwtUtil.createToken());
+            if(reUser != null) {
+                reDto.setAccount(reUser.getAccount());
+                reDto.setTelephone(reUser.getTelephone());
+                reDto.setToken(JwtUtil.createToken());
+            }else {
+                reDto.setResp("Can not find registered user");
+            }
+
         };
 
         return reDto;

@@ -55,6 +55,7 @@ public class LoReController {
         System.out.println("test register" + user.getUser().getTelephone());
         LoReDto reDto = loginRegisterService.register(user);
         System.out.println(reDto.getResp());
+        System.out.println(reDto.getTelephone());
         return ResponseEntity.ok(reDto);
     }
 
