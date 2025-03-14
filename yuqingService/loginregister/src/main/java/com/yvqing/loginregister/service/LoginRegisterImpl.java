@@ -7,6 +7,7 @@ import com.yvqing.loginregister.dao.LoReDao;
 import com.yvqing.loginregister.dto.LoReDto;
 import com.yvqing.loginregister.dto.UserRegistrationDto;
 import com.yvqing.loginregister.handler.UserNotFoundException;
+import com.yvqing.loginregister.utils.AccountUtil;
 import com.yvqing.loginregister.utils.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -121,6 +122,7 @@ public class LoginRegisterImpl implements LoginRegisterService {
             return reDto;
         } else {
             userDto.getUser().setCreate_time(LocalDateTime.now());
+            userDto.getUser().setAccount(AccountUtil.createAccount());
             if (userDto.getMethod().equals("phone")) {
                 re = loReDao.addUserByPhone(userDto.getUser());
                 reUser = loReDao.getUserByPhone(userDto.getUser().getTelephone()).get(0);
@@ -168,5 +170,6 @@ public class LoginRegisterImpl implements LoginRegisterService {
         // 检查列表是否为空
         return (userList != null && !userList.isEmpty()) ? userList.get(0) : null;
     }
+
 
 }
